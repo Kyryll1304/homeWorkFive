@@ -1,13 +1,12 @@
-const x, y, z, res;
 x = parseFloat(
   prompt(
     "Цей скрипт обчислить середнє арифметичне трьох чисел.Введіть перше...",
     ""
   )
 );
-y = parseFloat(prompt("Введіть друге число", ""));
-z = parseFloat(prompt("Введіть третє число", ""));
-res = (x + y + z) / 3;
+const y = parseFloat(prompt("Введіть друге число", ""));
+const z = parseFloat(prompt("Введіть третє число", ""));
+const res = (x + y + z) / 3;
 if (isNaN(x)) {
   alert("Ви ввели не число(Введіть перше...)");
 } else if (isNaN(y)) {
